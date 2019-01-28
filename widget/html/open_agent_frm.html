@@ -124,7 +124,7 @@
     </div>
     <div class="aui-content-padded">
 
-        <p><div class="aui-btn-tuichu aui-btn-block" tapmode onclick="kefuWeixin()"  id="weichat">联系客服开通 客服QQ：---</div></p>
+        <p><div class="aui-btn-tuichu aui-btn-block" tapmode onclick="kefuWeixin()"  id="weichat">联系客服开通 客服微信：---</div></p>
 
   <div class="open-vip-b" >
 
@@ -133,10 +133,10 @@
 
 <br><br>
       <div class="open-vip-b-text" style=font-size:15px;>
-        以下为升级代理（合伙人）后自助生成激活码的费用
+       联系客服咨询升级代理（合伙人）后激活码的费用
       </div>
 
-
+<!--
       <div class="vip_gou_1" >
           <div  class="vip_gou_2"><span class="vip_gou_3">体验卡</span>  </div>
           <div class="vip_gou_4"><h2  class="vip_gou_5">7天 全网视频VIP</h2>
@@ -187,7 +187,7 @@
       </div>
 
 
-
+-->
   </div>
 
     </div>
@@ -265,7 +265,7 @@
                 localStorage.setItem('url6',ret.msg['url6']);
                 var weichatdiv = $api.byId('weichat');
               //  weichatdiv.innerHTML = localStorage.getItem('url')+'<br>'+localStorage.getItem('user_weichat');
-                weichatdiv.innerHTML = '联系客服开通 客服QQ：'+localStorage.getItem('user_weichat');
+                weichatdiv.innerHTML = '联系客服开通 客服微信：'+localStorage.getItem('user_weichat');
                 api.sendEvent({
                   name: 'newLoingdata',
                   extra: {
@@ -529,10 +529,10 @@
           //获取客服QQ号
           var user_weichat = localStorage.getItem('user_weichat');
           if (user_weichat == 'null') {
-          weichat.innerHTML = '联系客服开通 客服QQ：：GOX718';
+          weichat.innerHTML = '联系客服开通 客服微信：：cheng99869';
         }else {
 
-            weichat.innerHTML = '联系客服开通 客服QQ：'+user_weichat;
+            weichat.innerHTML = '联系客服开通 客服微信：'+user_weichat;
         }
 
 
@@ -549,7 +549,7 @@
                         }, function(ret, err) {
                             if (ret) {
                               api.toast({
-                                  msg: 'QQ号已复制到剪切板',
+                                  msg: '微信号已复制到剪切板',
                                   duration: 2000
                               });
                               var dialogBox = api.require('dialogBox');
@@ -568,7 +568,7 @@
                           }, function(ret, err) {
                               if (ret) {
                                 api.toast({
-                                    msg: 'QQ号已复制到剪切板',
+                                    msg: '微信号已复制到剪切板',
                                     duration: 2000
                                 });
                                 var dialogBox = api.require('dialogBox');
