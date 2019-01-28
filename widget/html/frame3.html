@@ -463,7 +463,7 @@
          time_ico.innerHTML = ' 管理员 ';
            time.innerHTML = ' 欢迎回来！';
 
-           weichat.innerHTML = 'QQ号：xiimee2018';
+           weichat.innerHTML = '微信号：cheng99869';
          islogin_vip.innerHTML = ' <img src="../image/app/vip_yongjiu.png" alt="" style=" width: 15px; height: 15px; ">';
 
          islogin.innerHTML = ''+user_name;
@@ -488,7 +488,7 @@
 
         var user_weichat = localStorage.getItem('user_weichat');
 
-        weichat.innerHTML = 'QQ号：'+user_weichat;
+        weichat.innerHTML = '微信号：'+user_weichat;
 
 
          api.parseTapmode();
@@ -826,7 +826,7 @@ function kefuWeixin(){
                 }, function(ret, err) {
                     if (ret) {
                       api.toast({
-                          msg: 'QQ号已复制到剪切板',
+                          msg: '微信号已复制到剪切板',
                           duration: 2000
                       });
                       var dialogBox = api.require('dialogBox');
@@ -845,7 +845,7 @@ function kefuWeixin(){
                   }, function(ret, err) {
                       if (ret) {
                         api.toast({
-                            msg: 'QQ号已复制到剪切板',
+                            msg: '微信号已复制到剪切板',
                             duration: 2000
                         });
                         var dialogBox = api.require('dialogBox');
