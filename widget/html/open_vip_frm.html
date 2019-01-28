@@ -145,9 +145,11 @@
       <div class="open-vip-b-text" style=font-size:15px;>
         输入激活码点击立即开通即可成为会员
       </div>
+     <div class="open-vip-b-text" style=font-size:15px;>
+        联系客服微信获取激活码
+      </div>
 
-
-
+<!--
       <div class="vip_gou_1"  onclick="openUrl5()">
           <div  class="vip_gou_2"><span class="vip_gou_3">体验卡</span>  </div>
           <div class="vip_gou_4"><h2  class="vip_gou_5">7天 全网视频VIP</h2>
@@ -197,11 +199,11 @@
           <div  class="vip_gou_8" >购买激活码</div>
       </div>
 
-
+-->
 
   </div>
 <br><br>
-    <p><div class="aui-btn-tuichu aui-btn-block"  id="weichat">专属客服QQ：---</div></p>
+    <p><div class="aui-btn-tuichu aui-btn-block"  id="weichat">专属客服微信：---</div></p>
 
     </div>
   </div>
@@ -277,7 +279,7 @@
                 localStorage.setItem('url5',ret.msg['url5']);
                 localStorage.setItem('url6',ret.msg['url6']);
                 var weichatdiv = $api.byId('weichat');
-                weichatdiv.innerHTML = '客服QQ：'+localStorage.getItem('user_weichat');
+                weichatdiv.innerHTML = '客服微信：'+localStorage.getItem('user_weichat');
                 api.sendEvent({
                   name: 'newLoingdata',
                   extra: {
@@ -398,7 +400,7 @@
       var dialogBox = api.require('dialogBox');
       dialogBox.alert({
           texts: {
-              content: '请联系客服QQ：'+localStorage.getItem('user_weichat'),
+              content: '请联系客服微信：'+localStorage.getItem('user_weichat'),
               leftBtnTitle: '知道了',
               rightBtnTitle: '联系客服'
           },
