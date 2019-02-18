@@ -36,7 +36,7 @@
         <input id="password_reg" type="password" placeholder="再输入一次密码" class="myui-from-list-item-input">
       </li>
        <li class="myui-from-list-item">
-        <input id="share" type="tel" minlength="6" maxlength="6" placeholder="分享码(必填，联系专属客服获取)" class="myui-from-list-item-input">
+        <input id="share" type="tel" minlength="6" maxlength="6" placeholder="分享码(选填)" class="myui-from-list-item-input">
       </li>
       <li class="myui-from-list-item">
         <button id="btn2" type="button" name="button" class="myui-from-list-item-button" onclick="toReg()">立即注册</button>
@@ -84,13 +84,13 @@
         return;
       }
 
-       if(share == ''){
-        api.alert({
-            title: '警告！',
-            msg: '请输入分享码',
-        });
-        return;
-       }
+       //if(share == ''){
+        //api.alert({
+          //  title: '警告！',
+           // msg: '请输入分享码',
+        //});
+        //return;
+      // }
       if(username.length < 11){
         api.alert({
             title: '警告！',
